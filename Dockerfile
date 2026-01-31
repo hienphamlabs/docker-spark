@@ -16,6 +16,6 @@ RUN set -ex \
   && cd $SPARK_HOME/jars/ \
   && export AWS_VERSION=2.41.18 \
   && curl -LO https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-aws/${HADOOP_VERSION}/hadoop-aws-${HADOOP_VERSION}.jar \
-  && curl -Lo awssdk-${AWS_VERSION} https://repo1.maven.org/maven2/software/amazon/awssdk/bundle/${AWS_VERSION}/bundle-${AWS_VERSION}.jar
+  && curl -Lo awssdk-${AWS_VERSION}.jar https://repo1.maven.org/maven2/software/amazon/awssdk/bundle/${AWS_VERSION}/bundle-${AWS_VERSION}.jar
 
 USER spark
